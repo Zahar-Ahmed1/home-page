@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique Moderne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><i class="fas fa-store"></i> ShopStyle</a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="active">Accueil</a>
+            <a href="#products">Produits</a>
+            <a href="#about">À propos</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+            <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Découvrez Notre Collection</h1>
+            <p>Des produits de qualité pour votre style</p>
+            <div class="hero-buttons">
+                <a href="#products" class="cta-button primary">Explorer</a>
+                <a href="#about" class="cta-button secondary">En savoir plus</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800" alt="Collection">
+        </div>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section id="quick-links" class="quick-links">
+        <h2>Nos Services</h2>
+        <div class="links-grid">
+            <a href="#products" class="link-card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Mode</h3>
+                <p>Découvrez notre collection de vêtements</p>
+            </a>
+            <a href="#products" class="link-card">
+                <i class="fas fa-gem"></i>
+                <h3>Accessoires</h3>
+                <p>Complétez votre style</p>
+            </a>
+            <a href="#products" class="link-card">
+                <i class="fas fa-shoe-prints"></i>
+                <h3>Chaussures</h3>
+                <p>Des chaussures pour chaque occasion</p>
+            </a>
+            <a href="#products" class="link-card">
+                <i class="fas fa-gift"></i>
+                <h3>Offres Spéciales</h3>
+                <p>Profitez de nos promotions</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <h2>Nos Produits Populaires</h2>
+        <div class="category-filter">
+            <button class="filter-btn active" data-category="all">Tous</button>
+            <button class="filter-btn" data-category="vetements">Vêtements</button>
+            <button class="filter-btn" data-category="accessoires">Accessoires</button>
+            <button class="filter-btn" data-category="chaussures">Chaussures</button>
+        </div>
+        <div class="product-grid">
+            <div class="product-card" data-category="vetements">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=500" alt="Robe d'été">
+                    <div class="product-overlay">
+                        <button class="quick-view"><i class="fas fa-eye"></i></button>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Robe d'été</h3>
+                    <p>Robe légère et élégante</p>
+                    <div class="product-price">
+                        <span class="price">89,99 €</span>
+                        <span class="old-price">129,99 €</span>
+                    </div>
+                    <a href="product-details.html" class="product-button">Voir détails</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="accessoires">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500" alt="Sac à main">
+                    <div class="product-overlay">
+                        <button class="quick-view"><i class="fas fa-eye"></i></button>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Sac à main</h3>
+                    <p>Sac élégant en cuir véritable</p>
+                    <div class="product-price">
+                        <span class="price">149,99 €</span>
+                    </div>
+                    <a href="product-details.html" class="product-button">Voir détails</a>
+                </div>
+            </div>
+            <div class="product-card" data-category="chaussures">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500" alt="Chaussures de sport">
+                    <div class="product-overlay">
+                        <button class="quick-view"><i class="fas fa-eye"></i></button>
+                        <button class="add-to-cart"><i class="fas fa-shopping-cart"></i></button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3>Chaussures de sport</h3>
+                    <p>Confortables et stylées</p>
+                    <div class="product-price">
+                        <span class="price">79,99 €</span>
+                        <span class="old-price">99,99 €</span>
+                    </div>
+                    <a href="product-details.html" class="product-button">Voir détails</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-card">
+            <i class="fas fa-truck"></i>
+            <h3>Livraison Gratuite</h3>
+            <p>Pour toute commande supérieure à 50€</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-undo"></i>
+            <h3>Retours Faciles</h3>
+            <p>30 jours pour changer d'avis</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-lock"></i>
+            <h3>Paiement Sécurisé</h3>
+            <p>Transactions 100% sécurisées</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3>Support 24/7</h3>
+            <p>Une équipe à votre écoute</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos</h3>
+                <p>Votre boutique de mode en ligne préférée. Des produits de qualité à des prix compétitifs.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#products">Produits</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email">
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@shopstyle.com</p>
+                <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopStyle. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
